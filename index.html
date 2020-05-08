@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>JS drumkit</title>
+  <link rel="icon" type="image/png" href="./images/drum-kit-icon-5.png">
   <link rel="stylesheet" href="./style.css">
 </head>
 
+<header class="header">
+  <h1 class="drum-kit-tittle">Create your own rythms</h1>
+</header>
+
 <body>
-
-
   <div class="keys">
     <div data-key="81" class="key">
       <kbd>Q</kbd>
@@ -73,7 +76,6 @@
       audio.currentTime = 0; //rewind to the start
       audio.play();
       key.classList.add('playing');
-
     }
 
     function removeTransition(ev) {
@@ -81,12 +83,14 @@
       this.classList.remove('playing');
     }
 
-
     keys = document.querySelectorAll('.key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     window.addEventListener('keydown', playSound)
-
   </script>
+
+  <footer class="footer">
+    <p class="footer-text">&copy created by Eva Lopez Merino - 2020</p>
+  </footer>
 
 </body>
 
