@@ -80,4 +80,5 @@ kbd {
 .footer-text {
   color: white;
   font-size: 1.4rem;
+  text-decoration: none;
 }

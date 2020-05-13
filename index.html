@@ -66,29 +66,11 @@
   <audio data-key="73" src="sounds/tom.wav"></audio>
   <audio data-key="79" src="sounds/tink.wav"></audio>
   <audio data-key="80" src="sounds/808.wav"></audio>
-
-  <script>
-    function playSound(ev) {
-      const audio = document.querySelector(`audio[data-key='${ev.keyCode}']`);
-      const key = document.querySelector(`.key[data-key='${ev.keyCode}']`);
-      if (!audio) return; //stop the function from running all together
-      audio.currentTime = 0; //rewind to the start
-      audio.play();
-      key.classList.add('playing');
-    }
-
-    function removeTransition(ev) {
-      if (ev.propertyName !== 'transform') return; // skip it if it's not a transform
-      this.classList.remove('playing');
-    }
-
-    keys = document.querySelectorAll('.key');
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-    window.addEventListener('keydown', playSound)
+  <script type="text/javascript" src="./main.js"></script>
   </script>
-
   <footer class="footer">
-    <p class="footer-text">&copy created by Eva Lopez Merino - 2020</p>
+    <a href="https://www.linkedin.com/in/evalopezmerino/" target="_blank" class="footer-text">&copy created by Eva Lopez
+      Merino - 2020</a>
   </footer>
 </body>
 
