@@ -1,4 +1,4 @@
-#30 DAY VANILLA JAVA SCRIPT CODING CHALLENGE.
+# 30 DAY VANILLA JAVA SCRIPT CODING CHALLENGE.
 _Build 30 things in 30 days with 30 tutorials_.
 (https://javascript30.com/).
 
